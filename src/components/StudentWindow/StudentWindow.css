@@ -1,0 +1,17 @@
+.display-box{
+    background-color: white;
+    width:80%;
+    max-width: 1200px;
+    height: 78%;
+    overflow: auto;
+    border-radius: 1rem;
+
+    box-shadow: 0 0.3rem gray;
+    
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+}
+
+.display-box::-webkit-scrollbar {
+    display: none;
+  }

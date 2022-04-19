@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
-import StudentData from './StudentData';
+import StudentData from '../StudentData';
+import './StudentWindow.css';
 
 export default function StudentWindow() {
 
@@ -26,7 +27,7 @@ export default function StudentWindow() {
         return <p>{error}</p>;
     } else {
         return (<>
-            <div>
+            <div className='display-box'>
                 {students.map((student) => {
                     return <StudentData data={student} key={student.id}></StudentData>
                 })}

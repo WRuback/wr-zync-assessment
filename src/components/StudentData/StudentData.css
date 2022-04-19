@@ -1,0 +1,53 @@
+.student-card {
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid lightgray;
+    padding: 0.5rem 2rem;
+}
+
+.student-info {
+    padding: 0 2rem;
+}
+
+.student-info h3 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.student-info p {
+    padding: 0 3rem;
+}
+
+.profile-img {
+    border-radius: 50%;
+    border: 2px solid grey;
+    width: 175px;
+    flex-shrink: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .student-info h3 {
+        font-size: 1.5rem;
+        margin: 10px 0 0 0;
+    }
+
+    .student-card {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        border-bottom: 3px solid lightgray;
+        padding: 0.5rem 2rem;
+    }
+
+    .profile-img {
+        width: 150px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .student-info h3 {
+        font-size: 1rem;
+        margin: 10px 0 0 0;
+    }
+}
